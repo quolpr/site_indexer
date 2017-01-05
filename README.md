@@ -1,24 +1,20 @@
-# README [![CircleCI](https://circleci.com/gh/quolpr/site_indexer/tree/master.svg?style=svg)](https://circleci.com/gh/quolpr/site_indexer/tree/master)
+# Site Indexer [![CircleCI](https://circleci.com/gh/quolpr/site_indexer/tree/master.svg?style=svg)](https://circleci.com/gh/quolpr/site_indexer/tree/master)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application allows you to index site. It scraps only `h1`, `h2`, `h3`, `a` tags from site
+asynchronously and saves it to DB. All code is covered with tests(98%), project was
+developed by using BDD methodology.
 
-Things you may want to cover:
+## Api Endpoints
 
-* Ruby version
+API documentation is generating by using [rspec_api_documentation](https://github.com/zipmark/rspec_api_documentation).
+Location - [Index](doc/api/index.markdown)
 
-* System dependencies
+## Configuration
 
-* Configuration
+To start this application on your machine you will need:
 
-* Database creation
+1. Copy .env_example to .env and make some changes.
 
-* Database initialization
+2. `rake db:create db:schema:load`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To start server - `bin/rails s`, to run tests - `bin/rspec`
