@@ -1,0 +1,23 @@
+Rails:
+  Enabled: true
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+    - lib/**/*.rake
+  Exclude:
+    - db/schema.rb
+    - db/migrate/*
+    - db/seeds.rb
+    - Gemfile
+    - Guardfile
+    - 'vendor/**/*'
+    - 'bin/spring'
+Style/Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 130
+Style/LambdaCall:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
