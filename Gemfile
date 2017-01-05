@@ -34,6 +34,7 @@ group :development, :test do
   gem 'spring-commands-rspec'
   gem 'faker'
   gem 'shoulda-matchers'
+  gem 'simplecov'
 
   # DB table annotation
   gem 'annotate'
