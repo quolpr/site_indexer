@@ -7,7 +7,7 @@ class SiteIndexJob < ApplicationJob
         http_status, parse_result = HtmlParser.from_url(site_index.url)
         site_index.contents.create!(parse_result)
         site_index.update!(status: 'done', http_status: http_status)
-      rescue Errno::ECONNREFUSED => e
+      rescue Errno::ECONNREFUSED
         site_index.update!(status: 'error')
       end
     end

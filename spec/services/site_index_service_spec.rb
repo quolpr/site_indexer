@@ -5,7 +5,7 @@ RSpec.describe SiteIndexService, type: :service do
     subject { SiteIndexService.create(params) }
 
     context 'model saved' do
-      let(:params) { { url: 'http://google.com'} }
+      let(:params) { { url: 'http://google.com' } }
       it 'calls site index job' do
         expect(SiteIndexJob).to receive(:perform_later).with(kind_of(SiteIndex))
         subject
@@ -13,7 +13,7 @@ RSpec.describe SiteIndexService, type: :service do
     end
 
     context 'model not saved' do
-      let(:params) { { url: ''} }
+      let(:params) { { url: '' } }
 
       it 'does nothing' do
         expect(SiteIndexJob).not_to receive(:perform_later)

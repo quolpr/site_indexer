@@ -7,25 +7,22 @@
 
 #### Headers
 
-<pre>Host: example.org
-Cookie: </pre>
+<pre>Content-Type: application/json
+Accept: application/json</pre>
 
 #### Route
 
 <pre>GET /site_indices</pre>
 
+#### Query Parameters
+
+<pre>{}: </pre>
+
 ### Response
 
 #### Headers
 
-<pre>X-Frame-Options: SAMEORIGIN
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-Content-Type: application/json; charset=utf-8
-ETag: W/&quot;b5db4a7832f6ee14d2697e0569531b43&quot;
-Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 1db7f4d1-a837-4e83-8374-2a4f49c9e9bc
-X-Runtime: 0.045344
+<pre>Content-Type: application/json; charset=utf-8
 Content-Length: 1112</pre>
 
 #### Status
@@ -37,28 +34,28 @@ Content-Length: 1112</pre>
 <pre>{
   "data": [
     {
-      "id": "34",
+      "id": "51",
       "type": "site-indices",
       "attributes": {
         "url": "http://rubyonrails.org/",
         "status": "in_progress",
         "http-status": null,
-        "created-at": "2017-01-05T20:35:43.174Z",
-        "updated-at": "2017-01-05T20:35:43.174Z"
+        "created-at": "2017-01-05T21:02:20.559Z",
+        "updated-at": "2017-01-05T21:02:20.559Z"
       },
       "relationships": {
         "contents": {
           "data": [
             {
-              "id": "37",
+              "id": "64",
               "type": "site-index-contents"
             },
             {
-              "id": "38",
+              "id": "65",
               "type": "site-index-contents"
             },
             {
-              "id": "39",
+              "id": "66",
               "type": "site-index-contents"
             }
           ]
@@ -68,54 +65,54 @@ Content-Length: 1112</pre>
   ],
   "included": [
     {
-      "id": "37",
+      "id": "64",
       "type": "site-index-contents",
       "attributes": {
         "tag": "h1",
         "content": "content",
-        "created-at": "2017-01-05T20:35:43.178Z",
-        "updated-at": "2017-01-05T20:35:43.178Z"
+        "created-at": "2017-01-05T21:02:20.568Z",
+        "updated-at": "2017-01-05T21:02:20.568Z"
       },
       "relationships": {
         "site-index": {
           "data": {
-            "id": "34",
+            "id": "51",
             "type": "site-indices"
           }
         }
       }
     },
     {
-      "id": "38",
+      "id": "65",
       "type": "site-index-contents",
       "attributes": {
         "tag": "h1",
         "content": "content",
-        "created-at": "2017-01-05T20:35:43.180Z",
-        "updated-at": "2017-01-05T20:35:43.180Z"
+        "created-at": "2017-01-05T21:02:20.570Z",
+        "updated-at": "2017-01-05T21:02:20.570Z"
       },
       "relationships": {
         "site-index": {
           "data": {
-            "id": "34",
+            "id": "51",
             "type": "site-indices"
           }
         }
       }
     },
     {
-      "id": "39",
+      "id": "66",
       "type": "site-index-contents",
       "attributes": {
         "tag": "h1",
         "content": "content",
-        "created-at": "2017-01-05T20:35:43.181Z",
-        "updated-at": "2017-01-05T20:35:43.181Z"
+        "created-at": "2017-01-05T21:02:20.572Z",
+        "updated-at": "2017-01-05T21:02:20.572Z"
       },
       "relationships": {
         "site-index": {
           "data": {
-            "id": "34",
+            "id": "51",
             "type": "site-indices"
           }
         }
