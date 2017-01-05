@@ -1,4 +1,4 @@
-# README
+# README [![CircleCI](https://circleci.com/gh/quolpr/site_indexer/tree/master.svg?style=svg)](https://circleci.com/gh/quolpr/site_indexer/tree/master)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
